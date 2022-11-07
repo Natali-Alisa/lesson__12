@@ -1,0 +1,181 @@
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+    padding-bottom: 30px;
+    background: url('../img/6.jpg') 50% 0 repeat-y ;
+}
+
+body {
+    background-color: #c9e1f1;
+    } 
+
+.header__container {
+    max-width: 1800px;
+    margin: 40px;
+    padding: 20px;
+    margin: 0 auto;
+    }
+
+.list h1  {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.5;
+    }
+
+.list {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    color: #072c7a;
+    line-height: 1.5;
+    }
+
+    ul ul{
+    display: none;
+    }
+    
+    ul li:hover ul{
+    display: block;
+    }
+
+.blok {
+    padding: 90px;
+}
+
+.blok__translate, .blok__scale, .blok__rotate, .blok__skew, .blok__matrix, .blok3d__transform-origin, .blok3d__perspective, .blok3d__translate3d, .blok3d__translate3d, .blok3d__transform-style {
+    border-radius: 15%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 300px;
+	height: 300px;
+    background-image: linear-gradient(45deg, #b8e1fc 0%,#a9d2f3 0%,#fceba1 0%,#fceba1 35%,#90bcea 66%,#a2daf5 99%,#6ba8e5 100%,#bdf3fd 100%,#6ba8e5 102%);
+}
+
+.blok__translate-two, .blok__scale-two, .blok__rotate-two, .blok__skew-two, .blok__matrix-two, .blok3d__transform-origin-two, .blok3d__perspective-two, .blok3d__translate3d-two, .blok3d__transform-style-two {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #072c7a;
+    border-radius: 15%;
+    width: 300px;
+	height: 300px;
+    background: url('../img/1.jpg') 0 0 / cover no-repeat;
+}
+
+.blok__translate-two:hover {
+    transform: translate(-20%, -20%);
+}
+
+.blok__scale-two:hover {
+    transform: scale(0.7, 0.7);
+}
+
+.blok__rotate-two:hover {
+    transform: rotate(20deg);
+}
+
+.blok__skew-two:hover {
+    transform: skew(30deg);
+}
+.blok__matrix-two:hover {
+    transform: matrix(1, 0, 1, 1, 1, 0);
+}
+
+.blok3d__transform-origin-two:hover {
+    transform-origin: 0 0;
+    transform: rotate(20deg);
+}
+
+
+.blok3d {
+    padding: 70px;
+}
+
+.blok3d__perspective {
+    perspective: 300px;
+    perspective-origin: center;
+}
+
+.blok3d__perspective-two:hover {
+    transform: rotateX(30deg);
+}
+
+.blok3d__translate3d {
+    perspective: 400px;
+    perspective-origin: center;
+}
+
+.blok3d__translate3d-two:hover {
+    transform: translate3d(30px, 30px, 30px);
+}
+
+.blok3d__translate3d {
+    perspective: 400px;
+    transform-style: preserve-3d;
+}
+
+.blok3d__transform-style-two:hover {
+    transform: rotateY(30deg);
+}
+
+.blok3d__backface-visibility-two:hover {
+    backface-visibility: visible;
+}
+
+.backface__body {
+    margin: 0 auto;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+
+.backface__front,
+.backface__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+.backface__front {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #072c7a;
+    border-radius: 15%;
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #77608d;
+    background: url('../img/1.jpg') 0 0 / cover no-repeat;
+	backface-visibility: hidden;
+}
+.backface__back {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #072c7a;
+    border-radius: 15%;
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+    background-image: linear-gradient(45deg, #b8e1fc 0%,#a9d2f3 0%,#fceba1 0%,#fceba1 35%,#90bcea 66%,#a2daf5 99%,#6ba8e5 100%,#bdf3fd 100%,#6ba8e5 102%);
+}
+
+.backface:hover .backface__body {
+	transform: rotateY(-180deg);
+}
+
+.footer {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    color: #072c7a;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    }
